@@ -1,34 +1,38 @@
 // ----- Fonts ----- //
-$arial: Helvetica Neue, serif
+$courier: Courier, monospace
+$opensans: 'Open Sans'
+
 
 body
 	font-size: 16px //12pt
 	line-height: 1.25 // 20px
-	font-family: $arial
+	font-family: $opensans
 
 h1, h2, h3, h4, h5, h6
 	margin: 0
 
-h1
-	font-size: 1.875rem //30px
-
 h2
-	font-size: 1.5rem //24px
+	line-height: 1.3em
+	margin: 30px 0 10px 0
+	font-size: 5.2em
+	font-weight: bold
+	font-family: $courier
+	color: $blue
 
 h3
-	font-size: 1.25rem //20px
-
-h4
-	font-size: 1.125rem //18px
-
-h5
-	font-size: 1rem //16px
-
-h6
-	font-size: 0.875rem //14px
-
-p
-	font-size: 1rem //16px
+	font-size: 2em
+	font-weight: bold
+	font-family: $courier
+	a
+		text-decoration: none
+		color: orange
+		margin: 0 40px 0 0
+		padding: 5px 10px
+		&:hover, &:active, &.active
+			background-color: orange
+			text-decoration: none
+			@include border-radius(5px)
+			color: white
 
 a
 	color: blue
